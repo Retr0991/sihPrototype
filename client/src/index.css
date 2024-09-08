@@ -1,0 +1,121 @@
+/* General styles for the chatbot layout */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #070b34;
+  color: white;
+}
+
+.chatbot-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #070b34;
+}
+
+.header {
+  padding: 16px;
+  background: linear-gradient(to right, #001b44, #260f63);
+  border-bottom: 1px solid #3b82f6;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #7dd3fc;
+}
+
+.chat-area {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.message {
+  max-width: 75%;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.message.bot {
+  background-color: #1e40af;
+  border: 1px solid #2563eb;
+  align-self: flex-start;
+}
+
+.message.user {
+  background-color: #7e22ce;
+  border: 1px solid #6b21a8;
+  align-self: flex-end;
+}
+
+.message p {
+  margin: 0;
+  color: #e0f2fe;
+}
+
+.ticket-container {
+  background: linear-gradient(to right, #2563eb, #9333ea);
+  padding: 16px;
+  border-radius: 8px;
+  color: white;
+  border: 1px solid #2563eb;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.5);
+}
+
+.ticket-container h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #7dd3fc;
+}
+
+.ticket-container p {
+  margin: 4px 0;
+}
+
+.footer {
+  padding: 16px;
+  background: linear-gradient(to right, #001b44, #260f63);
+  border-top: 1px solid #3b82f6;
+}
+
+.input-container {
+  display: flex;
+  gap: 8px;
+}
+
+.input-box {
+  flex: 1;
+  padding: 8px;
+  background-color: #1e3a8a;
+  border: 1px solid #1d4ed8;
+  border-radius: 8px;
+  color: #7dd3fc;
+}
+
+.input-box::placeholder {
+  color: #60a5fa;
+}
+
+.send-button {
+  padding: 8px 16px;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #2563eb;
+}
+
+/* Utility classes */
+.scroll-to-bottom {
+  display: inline-block;
+}
